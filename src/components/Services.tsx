@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Globe, Smartphone, Palette, Code, Zap, BarChart3 } from "lucide-react";
+import { Globe, Smartphone, Palette, Code, Zap, BarChart3, Tent, PenTool, Image } from "lucide-react";
 
 const services = [
   {
@@ -21,6 +21,21 @@ const services = [
     icon: Code,
     title: "Sviluppo Custom",
     description: "Soluzioni software su misura per automatizzare i tuoi processi.",
+  },
+  {
+    icon: Tent,
+    title: "Allestimenti & Eventi",
+    description: "Montaggio booth, stand fieristici e allestimenti per eventi di ogni dimensione.",
+  },
+  {
+    icon: PenTool,
+    title: "Copywriting",
+    description: "Testi persuasivi per web, social e campagne che catturano l'attenzione.",
+  },
+  {
+    icon: Image,
+    title: "Grafica",
+    description: "Identità visiva, loghi, materiali promozionali e design per ogni supporto.",
   },
   {
     icon: Zap,

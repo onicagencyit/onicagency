@@ -15,7 +15,7 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
         >
           <span className="inline-block px-4 py-1.5 mb-8 text-sm font-medium text-primary border border-primary/20 rounded-full bg-primary/5">
-            Servizi Digitali & Sviluppo App
+            Onic — Servizi Digitali & Eventi
           </span>
         </motion.div>
 
