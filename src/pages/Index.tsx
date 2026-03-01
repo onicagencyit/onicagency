@@ -2,8 +2,9 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import ArticleCarousel from "@/components/ArticleCarousel";
 import Services from "@/components/Services";
-import SocialReminders from "@/components/SocialReminders";
 import Collaborations from "@/components/Collaborations";
+import AppointmentCalendar from "@/components/AppointmentCalendar";
+import SocialReminders from "@/components/SocialReminders";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 import Chatbot from "@/components/Chatbot";
@@ -16,6 +17,7 @@ const Index = () => {
       <Services />
       <ArticleCarousel />
       <Collaborations />
+      <AppointmentCalendar />
       <SocialReminders />
       <CTA />
       <Footer />
