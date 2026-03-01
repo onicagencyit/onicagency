@@ -14,6 +14,7 @@ const Navbar = () => {
 
         <div className="hidden md:flex items-center gap-8 text-sm text-muted-foreground">
           <a href="#servizi" className="hover:text-foreground transition-colors">Servizi</a>
+          <a href="#appuntamenti" className="hover:text-foreground transition-colors">Appuntamenti</a>
           <a href="#" className="hover:text-foreground transition-colors">Chi sono</a>
           <a href="#" className="hover:text-foreground transition-colors">Contatti</a>
         </div>
@@ -32,6 +33,7 @@ const Navbar = () => {
             exit={{ opacity: 0, height: 0 }}
           >
             <a href="#servizi" onClick={() => setOpen(false)} className="text-muted-foreground hover:text-foreground transition-colors">Servizi</a>
+            <a href="#appuntamenti" onClick={() => setOpen(false)} className="text-muted-foreground hover:text-foreground transition-colors">Appuntamenti</a>
             <a href="#" onClick={() => setOpen(false)} className="text-muted-foreground hover:text-foreground transition-colors">Chi sono</a>
             <a href="#" onClick={() => setOpen(false)} className="text-muted-foreground hover:text-foreground transition-colors">Contatti</a>
           </motion.div>
