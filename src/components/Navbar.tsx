@@ -9,7 +9,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border/30">
       <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
         <a href="#" className="text-xl font-bold font-[family-name:var(--font-display)]">
-          <span className="text-gradient">Dev</span>Studio
+          <span className="text-gradient">Onic</span>
         </a>
 
         <div className="hidden md:flex items-center gap-8 text-sm text-muted-foreground">
