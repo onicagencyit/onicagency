@@ -10,7 +10,7 @@ const CTA = () => {
           prima consulenza gratuita.
         </p>
         <a
-          href="mailto:info@onicagency.it"
+          href="/parliamo"
           className="inline-flex items-center justify-center mt-10 bg-primary text-primary-foreground hover:bg-primary/90 font-medium h-12 px-8 rounded-md transition-colors"
         >
           Prenota una consulenza

@@ -55,10 +55,11 @@ const Hero = () => {
         {/* CTAs */}
         <div className="mt-10 flex flex-wrap gap-4">
           <Button
+            asChild
             size="lg"
             className="bg-primary text-primary-foreground hover:bg-primary/90 font-body px-8 h-12 rounded-md"
           >
-            Inizia ora
+            <a href="/parliamo">Inizia ora</a>
           </Button>
           <Button
             size="lg"

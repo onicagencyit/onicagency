@@ -240,9 +240,12 @@ const TierCard = ({ tier, highlight }: { tier: Tier; highlight: boolean }) => {
       </div>
 
       <div className="mt-auto p-6 md:p-8 pt-0">
-        <button className="w-full bg-primary text-primary-foreground hover:bg-primary/90 font-medium h-11 rounded-md transition-colors">
+        <a
+          href="/parliamo"
+          className="block w-full text-center bg-primary text-primary-foreground hover:bg-primary/90 font-medium h-11 leading-[44px] rounded-md transition-colors"
+        >
           Richiedi info
-        </button>
+        </a>
       </div>
     </div>
   );
