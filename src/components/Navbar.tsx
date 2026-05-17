@@ -50,7 +50,7 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`fixed top-0 left-0 right-0 z-50 h-16 backdrop-blur-lg transition-shadow duration-300 ${
+        className={`fixed top-0 left-0 right-0 z-50 h-20 backdrop-blur-lg transition-shadow duration-300 ${
           scrolled ? "shadow-lg shadow-black/40" : ""
         }`}
         style={{
@@ -68,7 +68,7 @@ const Navbar = () => {
             <img
               src={onicLogo}
               alt="ONIC Agency"
-              className="h-8 w-auto"
+              className="h-12 md:h-14 w-auto"
             />
           </Link>
 
@@ -105,7 +105,7 @@ const Navbar = () => {
 
       {open && (
         <div
-          className="fixed inset-0 z-40 md:hidden pt-16 animate-fade-in"
+          className="fixed inset-0 z-40 md:hidden pt-20 animate-fade-in"
           style={{ backgroundColor: "#0E0E0E" }}
         >
           <div className="flex flex-col items-center justify-center gap-8 py-12 px-6 h-full">
