@@ -105,7 +105,7 @@ const Navbar = () => {
 
       {open && (
         <div
-          className="fixed inset-0 z-40 md:hidden pt-16 animate-fade-in"
+          className="fixed inset-0 z-40 md:hidden pt-20 animate-fade-in"
           style={{ backgroundColor: "#0E0E0E" }}
         >
           <div className="flex flex-col items-center justify-center gap-8 py-12 px-6 h-full">
