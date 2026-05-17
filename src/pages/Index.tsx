@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Ecosystem from "@/components/Ecosystem";
+import Services from "@/components/Services";
 
 const Index = () => {
   return (
@@ -9,6 +10,7 @@ const Index = () => {
       <main>
         <Hero />
         <Ecosystem />
+        <Services />
       </main>
     </div>
   );
