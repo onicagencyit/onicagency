@@ -69,18 +69,18 @@ const Hero = () => {
           </Button>
         </div>
 
-        {/* O-N-I-C pillars */}
-        <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-px bg-[hsl(35_91%_55%/0.18)] border border-[hsl(35_91%_55%/0.18)] rounded-lg overflow-hidden">
+        {/* O-N-I-C pillars - compact horizontal strip */}
+        <div className="mt-14 grid grid-cols-4 gap-px bg-[hsl(35_91%_55%/0.18)] border border-[hsl(35_91%_55%/0.18)] rounded-md overflow-hidden">
           {pillars.map((p) => (
             <div
               key={p.letter}
-              className="group relative bg-card p-6 md:p-8 transition-colors hover:bg-card/60"
+              className="group relative bg-card px-2 py-3 md:px-4 md:py-4 flex items-center gap-2 md:gap-3 transition-colors hover:bg-card/60"
             >
               <span className="absolute top-0 left-0 right-0 h-px bg-primary scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500" />
-              <div className="font-display text-5xl md:text-6xl text-foreground leading-none">
+              <div className="font-display text-2xl md:text-3xl text-foreground leading-none">
                 {p.letter}
               </div>
-              <div className="mt-3 text-xs md:text-sm uppercase tracking-[0.2em] text-muted-foreground">
+              <div className="text-[10px] md:text-xs uppercase tracking-[0.18em] text-muted-foreground leading-tight">
                 {p.word}
               </div>
             </div>
