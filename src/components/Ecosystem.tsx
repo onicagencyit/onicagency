@@ -8,8 +8,7 @@ const stats = [
 const Ecosystem = () => {
   return (
     <section className="relative w-full bg-background py-24 md:py-32">
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
-        {/* Left column */}
+      <div className="max-w-4xl mx-auto px-6">
         <div>
           <div className="flex items-center gap-3 mb-8">
             <span className="block h-px w-10 bg-primary" />
@@ -58,44 +57,6 @@ const Ecosystem = () => {
                 </div>
               </div>
             ))}
-          </div>
-        </div>
-
-        {/* Right column - vertical showcase box */}
-        <div className="relative rounded-lg border border-[hsl(35_91%_55%/0.35)] bg-card overflow-hidden min-h-[500px] lg:min-h-full flex flex-col">
-          {/* faint radial glow */}
-          <div
-            aria-hidden
-            className="absolute inset-0 pointer-events-none"
-            style={{
-              background:
-                "radial-gradient(circle at 50% 40%, hsl(35 91% 55% / 0.08), transparent 70%)",
-            }}
-          />
-
-          {/* Center oversized faded text */}
-          <div className="flex-1 flex items-center justify-center overflow-hidden px-4">
-            <span
-              className="font-display text-foreground/[0.06] text-[11vw] lg:text-[9vw] leading-none whitespace-nowrap tracking-wider select-none"
-            >
-              ONIC AGENCY
-            </span>
-          </div>
-
-          {/* Tag bottom */}
-          <div className="relative p-6 md:p-8 border-t border-[hsl(35_91%_55%/0.18)]">
-            <div className="inline-flex items-center gap-3 rounded-full border border-[hsl(35_91%_55%/0.35)] bg-background/60 backdrop-blur px-4 py-2">
-              <span className="relative flex h-2.5 w-2.5">
-                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75" />
-                <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-primary" />
-              </span>
-              <span className="text-sm font-medium text-foreground">
-                ONIC Agency
-              </span>
-            </div>
-            <div className="mt-3 text-xs uppercase tracking-[0.22em] text-muted-foreground">
-              Operations · Networking · Innovation · Content
-            </div>
           </div>
         </div>
       </div>
