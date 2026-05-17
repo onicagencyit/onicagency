@@ -74,13 +74,13 @@ const Hero = () => {
           {pillars.map((p) => (
             <div
               key={p.letter}
-              className="group relative bg-card px-2 py-3 md:px-4 md:py-4 flex items-center gap-2 md:gap-3 transition-colors hover:bg-card/60"
+              className="group relative bg-card px-2 py-3 md:px-4 md:py-4 flex items-center justify-center md:justify-start gap-2 md:gap-3 transition-colors hover:bg-card/60"
             >
               <span className="absolute top-0 left-0 right-0 h-px bg-primary scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500" />
-              <div className="font-display text-2xl md:text-3xl text-foreground leading-none">
+              <div className="font-display text-3xl md:text-3xl text-foreground leading-none">
                 {p.letter}
               </div>
-              <div className="text-[10px] md:text-xs uppercase tracking-[0.18em] text-muted-foreground leading-tight">
+              <div className="hidden md:block text-xs uppercase tracking-[0.18em] text-muted-foreground leading-tight">
                 {p.word}
               </div>
             </div>
