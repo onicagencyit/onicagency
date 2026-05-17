@@ -82,4 +82,10 @@
   .glow {
     box-shadow: var(--shadow-glow);
   }
+  .scrollbar-none {
+    scrollbar-width: none;
+  }
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
 }
