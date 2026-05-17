@@ -11,8 +11,9 @@ const BULLETS = [
 
 const Parliamo = () => {
   const [form, setForm] = useState({ nome: "", email: "", telefono: "", messaggio: "" });
+  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     const nome = form.nome.trim();
     const email = form.email.trim();
@@ -20,18 +21,24 @@ const Parliamo = () => {
       toast({ title: "Controlla i campi", description: "Nome ed email sono obbligatori." });
       return;
     }
-    const subject = encodeURIComponent(`Nuova richiesta da ${nome}`);
-    const body = encodeURIComponent(
-      [
-        `Nome: ${nome}`,
-        `Email: ${email}`,
-        `Telefono: ${form.telefono.trim() || "—"}`,
-        ``,
-        `Progetto:`,
-        form.messaggio.trim() || "—",
-      ].join("\n")
-    );
-    window.location.href = `mailto:onic.agency@gmail.com?subject=${subject}&body=${body}`;
+    setStatus("loading");
+    try {
+      const res = await fetch("https://formspree.io/f/mojbagvy", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          name: nome,
+          email,
+          phone: form.telefono.trim(),
+          message: form.messaggio.trim(),
+        }),
+      });
+      if (!res.ok) throw new Error("Request failed");
+      setStatus("success");
+      setForm({ nome: "", email: "", telefono: "", messaggio: "" });
+    } catch {
+      setStatus("error");
+    }
   };
 
   return (
@@ -96,11 +103,23 @@ const Parliamo = () => {
 
           <button
             type="submit"
-            className="w-full h-12 rounded-md font-medium transition-colors"
+            disabled={status === "loading"}
+            className="w-full h-12 rounded-md font-medium transition-colors disabled:opacity-60"
             style={{ backgroundColor: "#F5A623", color: "#000" }}
           >
-            Invia la richiesta
+            {status === "loading" ? "Invio in corso..." : "Invia la richiesta"}
           </button>
+
+          {status === "success" && (
+            <p className="text-center text-sm font-medium text-green-500 pt-2">
+              Grazie! Ti risponderemo entro 24 ore.
+            </p>
+          )}
+          {status === "error" && (
+            <p className="text-center text-sm font-medium text-red-500 pt-2">
+              Qualcosa è andato storto. Riprova o scrivici a onic.agency@gmail.com
+            </p>
+          )}
 
           <p className="text-center text-xs text-muted-foreground pt-2">
             Risponderemo entro 24 ore.
