@@ -76,7 +76,7 @@ const Ecosystem = () => {
           {/* Center oversized faded text */}
           <div className="flex-1 flex items-center justify-center overflow-hidden px-4">
             <span
-              className="font-display text-foreground/[0.06] text-[28vw] lg:text-[14vw] leading-none whitespace-nowrap tracking-wider select-none"
+              className="font-display text-foreground/[0.06] text-[11vw] lg:text-[9vw] leading-none whitespace-nowrap tracking-wider select-none"
             >
               ONIC AGENCY
             </span>
