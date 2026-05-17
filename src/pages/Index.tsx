@@ -1,10 +1,13 @@
 import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Navbar />
-      <main className="pt-24" />
+      <main>
+        <Hero />
+      </main>
     </div>
   );
 };
