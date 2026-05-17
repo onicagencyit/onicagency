@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Menu, X } from "lucide-react";
+import onicLogo from "@/assets/onic-logo.png";
 
 type NavLink = { label: string; href: string; section?: string };
 
@@ -61,10 +62,14 @@ const Navbar = () => {
           <Link
             to="/"
             onClick={() => setOpen(false)}
-            className="font-display text-2xl tracking-wider"
+            className="flex items-center"
+            aria-label="ONIC Agency"
           >
-            <span className="text-foreground">ONIC</span>{" "}
-            <span className="text-primary">Agency</span>
+            <img
+              src={onicLogo}
+              alt="ONIC Agency"
+              className="h-8 w-auto"
+            />
           </Link>
 
           <div className="hidden md:flex items-center gap-8">
