@@ -9,10 +9,11 @@ const Navbar = () => {
           <span className="text-primary">Agency</span>
         </a>
         <Button
+          asChild
           variant="outline"
           className="border-primary text-primary hover:bg-primary hover:text-primary-foreground bg-transparent font-body"
         >
-          Parliamo
+          <a href="/parliamo">Parliamo</a>
         </Button>
       </div>
     </nav>

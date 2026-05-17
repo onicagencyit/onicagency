@@ -40,6 +40,12 @@ const Footer = () => {
             <Music2 className="h-5 w-5" />
           </a>
         </div>
+        <a
+          href="mailto:onic.agency@gmail.com"
+          className="text-sm text-muted-foreground hover:text-primary transition-colors mt-2"
+        >
+          onic.agency@gmail.com
+        </a>
         <div className="text-xs text-muted-foreground mt-3">
           © 2025 ONIC Agency — onicagency.it
         </div>
