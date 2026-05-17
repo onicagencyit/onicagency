@@ -1,6 +1,6 @@
 const CTA = () => {
   return (
-    <section className="relative w-full bg-card border-y border-primary/40 py-20 md:py-28">
+    <section id="contatti" className="relative w-full bg-card border-y border-primary/40 py-20 md:py-28 scroll-mt-20">
       <div className="max-w-4xl mx-auto px-6 text-center">
         <h2 className="font-display leading-[0.95] text-5xl md:text-7xl text-foreground">
           PRONTO A <span className="text-primary">PARTIRE?</span>

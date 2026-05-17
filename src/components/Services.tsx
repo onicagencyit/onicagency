@@ -256,7 +256,7 @@ const Services = () => {
   const current = tabs.find((t) => t.id === active)!;
 
   return (
-    <section className="relative w-full bg-background py-24 md:py-32">
+    <section id="servizi" className="relative w-full bg-background py-24 md:py-32 scroll-mt-20">
       <div className="max-w-7xl mx-auto px-6">
         {/* Tabs */}
         <div className="flex flex-wrap gap-2 md:gap-3 mb-12 border-b border-[hsl(35_91%_55%/0.18)] pb-4">

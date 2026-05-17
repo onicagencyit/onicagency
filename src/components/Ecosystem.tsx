@@ -7,7 +7,7 @@ const stats = [
 
 const Ecosystem = () => {
   return (
-    <section className="relative w-full bg-background py-24 md:py-32">
+    <section id="chi-siamo" className="relative w-full bg-background py-24 md:py-32 scroll-mt-20">
       <div className="max-w-4xl mx-auto px-6">
         <div>
           <div className="flex items-center gap-3 mb-8">
