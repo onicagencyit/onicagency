@@ -2,6 +2,7 @@ import { useState, FormEvent } from "react";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { toast } from "@/hooks/use-toast";
+import Navbar from "@/components/Navbar";
 
 const BULLETS = [
   "Analizziamo la tua situazione attuale",
@@ -42,12 +43,8 @@ const Parliamo = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background text-foreground flex flex-col items-center px-6 py-10">
-      <a href="/" className="font-display text-xl tracking-wider mb-12">
-        <span className="text-foreground">ONIC</span>{" "}
-        <span className="text-primary">Agency</span>
-      </a>
-
+    <div className="min-h-screen bg-background text-foreground flex flex-col items-center px-6 pt-28 pb-10">
+      <Navbar />
       <main className="w-full max-w-xl text-center">
         <h1 className="font-display leading-[0.95] tracking-wide text-5xl md:text-7xl">
           <span className="block text-foreground">PARLIAMO DEL</span>
