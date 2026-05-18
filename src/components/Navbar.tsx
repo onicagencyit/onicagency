@@ -8,6 +8,7 @@ type NavLink = { label: string; href: string; section?: string };
 const links: NavLink[] = [
   { label: "Servizi", href: "/#servizi", section: "servizi" },
   { label: "Portfolio", href: "/portfolio" },
+  { label: "Team", href: "/team" },
   { label: "Chi siamo", href: "/#chi-siamo", section: "chi-siamo" },
   { label: "Contatti", href: "/#contatti", section: "contatti" },
 ];
