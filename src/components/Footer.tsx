@@ -47,7 +47,7 @@ const Footer = () => {
           onic.agency@gmail.com
         </a>
         <div className="text-xs text-muted-foreground mt-3">
-          © 2025 ONIC Agency — onicagency.it
+          © 2026 ONIC Agency — onicagency.lovable.app
         </div>
       </div>
     </footer>
