@@ -1,5 +1,5 @@
 const stats = [
-  { value: "5+", label: "Anni sul campo" },
+  { value: "100%", label: "Approccio su misura" },
   { value: "360°", label: "Digitale + Fisico" },
   { value: "1", label: "Interlocutore unico" },
   { value: "∞", label: "Settori serviti" },
@@ -28,7 +28,7 @@ const Ecosystem = () => {
               realizzazione di eventi, dal contenuto al palco.
             </p>
             <p>
-              In 5 anni abbiamo sviluppato un metodo unico:{" "}
+              Abbiamo sviluppato un metodo unico:{" "}
               <span className="text-foreground font-medium">
                 un solo interlocutore che orchestra tutto
               </span>{" "}
