@@ -48,8 +48,7 @@ const Hero = () => {
           <span className="text-foreground font-medium">
             ONIC Agency gestisce tutto
           </span>{" "}
-          — digitale, comunicazione, produzione e realizzazione eventi — con 5 anni
-          di esperienza sul campo.
+          — digitale, comunicazione, produzione e realizzazione eventi.
         </p>
 
         {/* CTAs */}
