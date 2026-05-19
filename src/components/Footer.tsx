@@ -4,6 +4,9 @@ const Footer = () => {
   return (
     <footer className="w-full bg-background border-t border-[hsl(35_91%_55%/0.18)] py-14">
       <div className="max-w-4xl mx-auto px-6 text-center flex flex-col items-center gap-5">
+        <p className="font-display text-2xl md:text-4xl tracking-wide text-foreground leading-tight max-w-2xl">
+          Le idee non aspettano. <span className="text-primary">Noi nemmeno.</span>
+        </p>
         <div className="font-display text-2xl tracking-wider">
           <span className="text-foreground">ONIC</span>{" "}
           <span className="text-primary">Agency</span>
